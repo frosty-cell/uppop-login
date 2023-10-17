@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-size: xx-large;
+}
+
+.gray-text {
+    color: #878787;
+    font-size: large;
+}
+
+.main-content {
+    display: flex;
+}
+
+.leftchild {
+    flex: 3; 
+    height: 100vh; /* ให้ความสูงของ .leftchild เต็มหน้าจอของผู้ใช้ (100vh) */
+    background: center/cover no-repeat url('img/backgroudlogo-uppop.png');
+    display: flex;
+    justify-content: center; /* จัดตำแหน่งรูปพื้นหลังให้อยู่กึงกลางแนวตั้งและนอน */
+    align-items: center; /* จัดตำแหน่งรูปพื้นหลังให้อยู่กึงกลางแนวตั้งและนอน */
+}
+
+.backgroud-logo {
+    text-align: center; /* จัดตำแหน่งข้อความและโลโก้ในส่วนซ้ายให้อยู่กึงกลางแนวตั้งและนอน */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vh; /* ทำให้พื้นหลังรองรับหน้าจอ */
+    max-height: 100%;
+}
+
+.logo {
+    display: grid;
+    place-content: center;
+    width: 35vh;
+    height: 25vh;
+}
+
+.rightchild {
+    flex : 5;
+    height: 100vh; /* ให้ความสูงของ .rightchild เต็มหน้าจอของผู้ใช้ (100vh) */
+    /* border: 1px solid green; */
+    display: grid;
+    place-content: center;
+}
+
+.text-welcome {
+    margin: 1rem; /* ระยะห่างของข้อความยินดีต้อนรับ */
+    margin-bottom: 5vh;
+}
+
+.details-login {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vh; /* ระยะห่างด้านบนของรายละเอียดการเข้าสู่ระบบ */
+}
+.details-login label {
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+.buttonlogin {
+    margin-top: 10px; /* ระยะห่างด้านบนของปุ่มเข้าสู่ระบบ */
+    background-color: #01919C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding: 1vh;
+}
+.buttontext{
+    color: #FFFFFF;
+    font-size: large;
+}
+
+.logo-login {
+    width: 5vh;
+    height: 5vh;
+}
+
+form {
+    width: 78vh; /* กำหนดความกว้างสูงสุดของแบบฟอร์ม */
+    padding: 1vh;
+    background-color: #fff; /* สีพื้นหลังแบบฟอร์ม */
+}
+
+label, input {
+    display: block;
+    margin: 1rem; /* ระยะห่างระหว่างฟิลด์ */
+    font-size: larger;
+    color: #000000;
+}
+input {
+    border: 2px solid #01919C;
+    border-radius: 5px;
+    margin: 1vh;
+    height: 8vh;
+    width: 95%;
+}
+/* เลือก checkbox */
+input[type="checkbox"] {
+    /* เอาเครื่องมือเลือก checkbox ออก */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* กำหนดขนาดของ checkbox */
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #01919C;
+    border-radius: 4px;
+    padding: 2px; /* ให้เครื่องมือสร้างตัวเลือก checkbox มีระยะห่างจากขอบ */
+}
+/* กำหนดสีของ checkbox ที่ถูกเลือก */
+input[type="checkbox"]:checked {
+    background-color: #9c0191; /* เปลี่ยนสีเมื่อถูกเลือก */
+    border: 2px solid red;
+}

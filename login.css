@@ -6,11 +6,6 @@ h3{
     font-size: xx-large;
 }
 
-.gray-text {
-    color: #878787;
-    font-size: large;
-}
-
 .main-content {
     display: flex;
     max-width: 100%;
@@ -53,38 +48,9 @@ h3{
     margin: 1rem; /* ระยะห่างของข้อความยินดีต้อนรับ */
     margin-bottom: 5vh;
 }
-
-.details-login {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1vh; /* ระยะห่างด้านบนของรายละเอียดการเข้าสู่ระบบ */
-}
-.details-login label {
-    display: flex;
-    align-items: center;
+.gray-text {
+    color: #878787;
     font-size: large;
-}
-
-.buttonlogin {
-    margin-top: 10px; /* ระยะห่างด้านบนของปุ่มเข้าสู่ระบบ */
-    background-color: #01919C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 5px;
-    padding: 1vh;
-}
-.buttontext{
-    color: #FFFFFF;
-    font-size: large;
-}
-
-.logo-login {
-    width: 5vh;
-    height: 5vh;
 }
 
 form {
@@ -102,7 +68,7 @@ label, input {
 input {
     border: 2px solid #01919C;
     border-radius: 5px;
-    height: 8vh;
+    padding: 2vh;
     width: 100%;
 }
 .input-text{
@@ -126,4 +92,38 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
     background-color: #9c0191; /* เปลี่ยนสีเมื่อถูกเลือก */
     border: 2px solid red;
+}
+
+.details-login {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vh; /* ระยะห่างด้านบนของรายละเอียดการเข้าสู่ระบบ */
+}
+.details-login label {
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+.buttonlogin {
+    margin: 1rem; /* ระยะห่างด้านบนของปุ่มเข้าสู่ระบบ */
+    background-color: #01919C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding: 1vh;
+    width: 100%;
+}
+.buttontext{
+    color: #FFFFFF;
+    font-size: large;
+}
+
+.logo-login {
+    width: 5vh;
+    height: 5vh;
 }

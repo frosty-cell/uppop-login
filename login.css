@@ -13,6 +13,7 @@ h3{
 
 .main-content {
     display: flex;
+    max-width: 100%;
 }
 
 .leftchild {
@@ -94,16 +95,18 @@ form {
 
 label, input {
     display: block;
-    margin: 1rem; /* ระยะห่างระหว่างฟิลด์ */
+    margin: 1vh;
     font-size: larger;
     color: #000000;
 }
 input {
     border: 2px solid #01919C;
     border-radius: 5px;
-    margin: 1vh;
     height: 8vh;
-    width: 95%;
+    width: 100%;
+}
+.input-text{
+    margin-bottom: 2vh;
 }
 /* เลือก checkbox */
 input[type="checkbox"] {
